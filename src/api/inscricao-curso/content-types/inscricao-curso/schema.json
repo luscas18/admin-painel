@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscricao_cursos",
+  "info": {
+    "singularName": "inscricao-curso",
+    "pluralName": "inscricao-cursos",
+    "displayName": "Inscrição de alunos nos cursos.",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "celular": {
+      "type": "string",
+      "required": true
+    },
+    "curso": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string",
+      "required": true
+    },
+    "data_nascimento": {
+      "type": "string"
+    },
+    "sobrenome": {
+      "type": "string",
+      "required": true
+    },
+    "termos_de_privacidade": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cadastro_curriculos",
+  "info": {
+    "singularName": "cadastro-curriculo",
+    "pluralName": "cadastro-curriculos",
+    "displayName": "Currículos cadastrados",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "curriculo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "vaga": {
+      "type": "string"
+    }
+  }
+}

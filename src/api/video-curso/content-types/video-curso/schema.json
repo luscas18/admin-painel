@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_cursos",
+  "info": {
+    "singularName": "video-curso",
+    "pluralName": "video-cursos",
+    "displayName": "VideoCurso"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

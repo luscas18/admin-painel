@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * curso service.
+ * biblioteca service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::curso.curso');
+module.exports = createCoreService('api::biblioteca.biblioteca');

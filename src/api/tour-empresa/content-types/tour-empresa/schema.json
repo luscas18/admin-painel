@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tour_empresas",
+  "info": {
+    "singularName": "tour-empresa",
+    "pluralName": "tour-empresas",
+    "displayName": "Imagens tour das unidades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagem": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "local": {
+      "type": "string"
+    },
+    "descricao_imagem": {
+      "type": "string",
+      "required": true
+    },
+    "unidade": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::unidade.unidade",
+      "inversedBy": "fotos"
+    }
+  }
+}

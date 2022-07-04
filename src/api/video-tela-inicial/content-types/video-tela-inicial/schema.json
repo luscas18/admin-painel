@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_tela_inicials",
+  "info": {
+    "singularName": "video-tela-inicial",
+    "pluralName": "video-tela-inicials",
+    "displayName": "Video da tela incial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "foto_de_capa": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

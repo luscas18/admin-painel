@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_cursos",
+  "info": {
+    "singularName": "categoria-curso",
+    "pluralName": "categoria-cursos",
+    "displayName": "Categoria dos cursos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "cursos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::curso.curso",
+      "mappedBy": "categoria"
+    }
+  }
+}

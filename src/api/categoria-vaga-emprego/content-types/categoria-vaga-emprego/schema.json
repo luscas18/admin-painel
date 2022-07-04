@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_vaga_empregos",
+  "info": {
+    "singularName": "categoria-vaga-emprego",
+    "pluralName": "categoria-vaga-empregos",
+    "displayName": "Categoria das vagas de empregos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "fkVaga": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vaga-emprego.vaga-emprego",
+      "mappedBy": "fkCategoria"
+    }
+  }
+}

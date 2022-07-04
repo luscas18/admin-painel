@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vaga_empregos",
+  "info": {
+    "singularName": "vaga-emprego",
+    "pluralName": "vaga-empregos",
+    "displayName": "Vagas de emprego",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vaga": {
+      "type": "string",
+      "required": true
+    },
+    "descricao": {
+      "type": "text",
+      "required": true
+    },
+    "atividades": {
+      "type": "text",
+      "required": true
+    },
+    "requisitos": {
+      "type": "text",
+      "required": true
+    },
+    "unidade": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unidade.unidade",
+      "inversedBy": "vaga_de_emprego"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "vaga",
+      "required": true
+    },
+    "presencial": {
+      "type": "boolean",
+      "required": true
+    },
+    "fkCategoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria-vaga-emprego.categoria-vaga-emprego",
+      "inversedBy": "fkVaga"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  curso controller
+ *  biblioteca controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::curso.curso');
+module.exports = createCoreController('api::biblioteca.biblioteca');

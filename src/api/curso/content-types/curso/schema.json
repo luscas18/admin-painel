@@ -13,20 +13,59 @@
   "pluginOptions": {},
   "attributes": {
     "nome": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "descricao": {
-      "type": "richtext"
+      "type": "text"
     },
-    "foto": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+    "habilidades": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome",
+      "required": true
+    },
+    "banner": {
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "indicar": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "presencial": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "apresentacao": {
+      "type": "string"
+    },
+    "alunos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aluno.aluno",
+      "mappedBy": "curso"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categoria-curso.categoria-curso",
+      "inversedBy": "cursos"
+    },
+    "unidade": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unidade.unidade",
+      "inversedBy": "cursos"
     }
   }
 }

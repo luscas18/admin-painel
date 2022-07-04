@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "telefone_inscricao_pdfs",
+  "info": {
+    "singularName": "telefone-inscricao-pdf",
+    "pluralName": "telefone-inscricao-pdfs",
+    "displayName": "Telefones portal noticias",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "telefone": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galeria_de_fotos",
+  "info": {
+    "singularName": "galeria-de-foto",
+    "pluralName": "galeria-de-fotos",
+    "displayName": "Galeria de foto"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "descricao_imagem": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
