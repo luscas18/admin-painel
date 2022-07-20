@@ -8,7 +8,10 @@
     "develop": "strapi develop",
     "start": "strapi develop",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package",
+    "heroku-postbuild": "patch-package",
+    "heroku-cleanup": "npx patch-package"
   },
   "devDependencies": {},
   "dependencies": {
