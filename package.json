@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
+    "translate": "cp -a ./src/admin/extensions/translations/. ./node_modules/@strapi/admin/admin/src/translations",
     "develop": "strapi develop",
     "start": "strapi develop",
     "build": "strapi build",
@@ -17,8 +18,11 @@
     "@strapi/provider-upload-aws-s3": "^4.2.2",
     "@strapi/strapi": "4.2.2",
     "better-sqlite3": "7.4.6",
+    "patch-package": "^6.4.7",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
+    "postinstall-postinstall": "^2.1.0",
+    "strapi-plugin-entity-relationship-chart": "^4.1.0",
     "strapi-plugin-import-export-entries": "^1.6.2"
   },
   "author": {

@@ -1,0 +1,38 @@
+diff --git a/node_modules/@strapi/admin/admin/src/assets/images/bgContainer.jpg b/node_modules/@strapi/admin/admin/src/assets/images/bgContainer.jpg
+new file mode 100644
+index 0000000..b088dba
+Binary files /dev/null and b/node_modules/@strapi/admin/admin/src/assets/images/bgContainer.jpg differ
+diff --git a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js b/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
+index f8b8d85..2ab8b6b 100644
+--- a/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
++++ b/node_modules/@strapi/admin/admin/src/pages/HomePage/index.js
+@@ -14,6 +14,8 @@ import { Main } from '@strapi/design-system/Main';
+ import { Box } from '@strapi/design-system/Box';
+ import { Grid, GridItem } from '@strapi/design-system/Grid';
+ import Logo from '../../assets/images/homepage-logo.png';
++import bgContainer from '../../assets/images/bgContainer.jpg';
++
+ import { useModels } from '../../hooks';
+ import isGuidedTourCompleted from '../../components/GuidedTour/utils/isGuidedTourCompleted';
+ import GuidedTourHomepage from '../../components/GuidedTour/Homepage';
+@@ -66,7 +68,10 @@ const HomePage = () => {
+         <LogoContainer>
+           <img alt="" aria-hidden src={Logo} />
+         </LogoContainer>
+-        <Box padding={10}>
++        <section style={{ width: "100%", minHeight: "100vh", backgroundImage: `url(${bgContainer})`, backgroundPosition: "center",backgroundSize:"contain", display: "flex", alignItems: "center", justifyContent: "center" }}>
++          <h1 style={{ fontSize: "50px", fontWeight: "bold", color: "#00008BF", textAlign: "center" }}>Gerencie o contéudo de seu site com facilidade agora mesmo </h1>
++        </section>
++        {/* <Box padding={10}>
+           <Grid>
+             <GridItem col={8} s={12}>
+               <HomeHeader
+@@ -83,7 +88,7 @@ const HomePage = () => {
+               <SocialLinks />
+             </GridItem>
+           </Grid>
+-        </Box>
++        </Box> */}
+       </Main>
+     </Layout>
+   );
