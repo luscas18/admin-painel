@@ -8,8 +8,10 @@
     "develop": "strapi develop",
     "start": "strapi develop",
     "build": "strapi build",
-    "strapi": "strapi","heroku-cleanup": "yarn patch-package"
-
+    "strapi": "strapi",
+    "heroku-cleanup": "yarn patch-package",
+    "postinstall": "patch-package",
+    "heroku-postbuild": "patch-package"
   },
   "devDependencies": {},
   "dependencies": {
