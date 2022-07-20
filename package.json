@@ -10,8 +10,7 @@
     "build": "strapi build",
     "strapi": "strapi",
     "postinstall": "patch-package",
-    "heroku-postbuild": "patch-package",
-    "heroku-cleanup": "npx patch-package"
+    "heroku-postbuild": "patch-package"
   },
   "devDependencies": {},
   "dependencies": {
